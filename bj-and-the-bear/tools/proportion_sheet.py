@@ -74,36 +74,51 @@ for p in range(0, H_PLATES + 1, 3):
     shapes.append(f'<line x1="{X(0)}" y1="{Y(p)}" x2="{X(W_STUDS)}" y2="{Y(p)}" stroke="{COL["grid"]}" stroke-width="0.5"/>')
 
 # ---- tractor ----
-STEER, DRIVE1, DRIVE2 = 5, 24, 31
-FIFTH = 26.5
-rect(1, 35, 11, 13, COL["black"])                       # frame rails
-rect(0, 1, 5, 9, COL["silver"])                         # bumper
-rect(1, 12, 9, 44, COL["red"])                          # cab + sleeper box
-rect(1, 12, 44, 50, COL["red"])                         # Aerodyne raised roof
-rect(1.3, 5.5, 29, 40, COL["glass"], sw=0.6)            # door window
-rect(8.5, 11.2, 45, 48, COL["glass"], sw=0.6)           # Aerodyne upper sleeper window
-rect(1, 12, 17, 19, COL["white"], sw=0.4)               # placeholder stripe band
-rect(1, 12, 16.5, 17, COL["gold"], sw=0)                # placeholder pinstripe
-rect(12, 19, 7, 12, COL["silver"])                      # fuel tank / steps
-rect(12.3, 13.1, 13, 54, COL["silver"])                 # exhaust stack
-rect(FIFTH - 2, FIFTH + 2, 13, 16, COL["black"])        # fifth wheel
+# Wheelbase 19.5 studs (~147 in): 3-stud gap between cab and reefer unit,
+# matching the reference photos.
+STEER, DRIVE1, DRIVE2 = 5, 21, 28
+FIFTH = 22.5
+rect(1, 32, 12, 14, COL["black"])                       # frame rails
+rect(0, 1, 5, 10, COL["silver"])                        # bumper
+rect(1, 12, 15, 43, COL["red"])                         # cab + sleeper box
+rect(1, 4, 43, 44, COL["red"])                          # front roof / visor
+shapes.append(f'<polygon points="{X(4)},{Y(43)} {X(7)},{Y(50)} {X(12)},{Y(50)} {X(12)},{Y(43)}" '
+              f'fill="{COL["red"]}" stroke="{COL["black"]}" stroke-width="1"/>')  # Aerodyne raised roof
+rect(8.5, 11.5, 50, 52, COL["red"])                     # roof pod
+shapes.append(f'<polygon points="{X(4.6)},{Y(44)} {X(6.4)},{Y(48.5)} {X(8)},{Y(48.5)} {X(8)},{Y(44)}" '
+              f'fill="{COL["glass"]}" stroke="{COL["black"]}" stroke-width="0.6"/>')  # upper sleeper window
+rect(1.3, 4.5, 31, 40, COL["glass"], sw=0.6)            # door window
+rect(1, 12, 29, 31, COL["white"], sw=0.4)               # white band under the windows
+shapes.append(f'<path d="M{X(12)},{Y(29)} L{X(12)},{Y(39)} L{X(8.5)},{Y(39)} Q{X(7)},{Y(39)} {X(7)},{Y(36)} L{X(7)},{Y(29)} Z" '
+              f'fill="{COL["white"]}" stroke="{COL["black"]}" stroke-width="0.4"/>')  # white rear sleeper panel
+rect(1, 12, 28, 29, COL["black"], sw=0)                 # pinstripe: black
+rect(1, 12, 27, 28, COL["gold"], sw=0)                  # pinstripe: gold/white
+rect(1, 12, 26, 27, COL["black"], sw=0)                 # pinstripe: black
+rect(8, 13, 8, 12, COL["silver"])                       # fuel tank + steps
+rect(12.2, 13.0, 14, 55, COL["silver"])                 # exhaust stack
+rect(FIFTH - 2, FIFTH + 2, 14, 16, COL["black"])        # fifth wheel
 for x in (STEER, DRIVE1, DRIVE2):
     wheel(x)
 
 # ---- trailer ----
 T0 = FIFTH - 5          # kingpin 5 studs back from the trailer front
 T1 = T0 + 72            # 45 ft = 72 studs
-rect(T0 - 3, T0, 34, 52, COL["silver"], label="reefer")  # refrigeration unit
-rect(T0, T1, 18, 54, COL["white"], label="45 ft reefer box, 72 studs, SNOT tiled walls")
+rect(T0 - 2.5, T0, 34, 52, COL["red"], label="reefer")   # refrigeration unit
+rect(T0, T1, 40, 54, COL["red"])                        # upper red
+rect(T0, T1, 29, 40, COL["white"], label="45 ft reefer: 72 studs, red with white band + pinstripes")
+rect(T0, T1, 28, 29, COL["black"], sw=0)
+rect(T0, T1, 27, 28, COL["gold"], sw=0)
+rect(T0, T1, 26, 27, COL["black"], sw=0)
+rect(T0, T1, 18, 26, COL["red"])                        # lower red
 rect(T0, T1, 17, 18, COL["black"])                     # floor / side rail
 rect(T0 + 18, T0 + 19, 4, 17, COL["silver"])           # landing gear
 for x in (T1 - 13, T1 - 6):
     wheel(x)
 
 # ---- dimensions ----
-dim(0, 35, 57.5, "tractor 35 studs (6.7 m)")
+dim(0, 32, 57.5, "tractor 32 studs (6.1 m)")
 dim(0, T1, -7, f"whole rig {T1:.1f} studs ({T1 * 8 / 10:.0f} cm model / {T1 * 0.192:.1f} m real)")
-dim(STEER, (DRIVE1 + DRIVE2) / 2, 20.5, "wheelbase 22.5 (170 in)")
+dim(STEER, (DRIVE1 + DRIVE2) / 2, 20.5, "wheelbase 19.5 (147 in)")
 vdim(T1 + 1.2, 0, 54, "54 plates = 13'6\"")
 vdim(-1.5, 0, 50, "50 pl")
 for x, name in ((STEER, "steer"), (DRIVE1, "drive"), (DRIVE2, "drive"), (T1 - 13, "trailer"), (T1 - 6, "trailer")):

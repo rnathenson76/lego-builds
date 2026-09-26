@@ -30,7 +30,7 @@ A functional Lego model of BJ McKay's season 1 rig from *BJ and the Bear* (1979)
 | Tractor length | about 6–6.5 m | about 30–34 studs |
 | Trailer length | 45 ft (13.7 m) | **about 71 studs** (agreed; 45 ft to start) |
 | Trailer height (13'6") | 4.1 m | about 18 bricks |
-| Whole rig | about 18 m | about 94 studs (about 75 cm); see DESIGN.md |
+| Whole rig | about 17 m | about 90 studs (about 72 cm); see DESIGN.md |
 
 ## 3. Decisions so far
 
