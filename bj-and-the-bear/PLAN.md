@@ -1,6 +1,6 @@
 # BJ and the Bear — Kenworth K100 Aerodyne + Reefer Trailer
 
-Build plan. **Status: plan for review. Nothing has been designed yet.**
+Build plan. **Status: plan agreed. Phase 1 (reference and dimensions) is in progress.**
 
 ## 1. Goal
 
@@ -28,9 +28,9 @@ A functional Lego model of BJ McKay's season 1 rig from *BJ and the Bear* (1979)
 | Body width | 96 in / 2.44 m | **12 studs** (agreed) |
 | Width over the dual tires | about 2.44 m | about 12–13 studs |
 | Tractor length | about 6–6.5 m | about 30–34 studs |
-| Trailer length | 40 ft (12.2 m) / 45 ft (13.7 m) | **64 studs / 71 studs** (to be decided, see open questions) |
+| Trailer length | 45 ft (13.7 m) | **about 71 studs** (agreed; 45 ft to start) |
 | Trailer height (13'6") | 4.1 m | about 18 bricks |
-| Whole rig | about 18–19 m | about 95–100 studs (about 80 cm) |
+| Whole rig | about 18 m | about 94 studs (about 75 cm); see DESIGN.md |
 
 ## 3. Decisions so far
 
@@ -38,7 +38,10 @@ A functional Lego model of BJ McKay's season 1 rig from *BJ and the Bear* (1979)
 |---|---|
 | Wheels | 18 of 2695 + 2696, already owned |
 | Width | 12-wide |
-| Trailer type | Refrigerated trailer, as in season 1 |
+| Trailer type | Refrigerated trailer, as in season 1, **45 ft** |
+| Booklets | **Separate** tractor and trailer books |
+| Bear figure | Not included |
+| Feature list | Agreed as written in section 4 |
 | Stripes and livery | Built from tiles and brick color changes. **No stickers** |
 | Trailer walls | **Smooth tiles**, not panels |
 | Function | **Functional** (feature list in section 4) |
@@ -68,8 +71,7 @@ ones.
    sliding legs, so the trailer stands on its own.
 6. **Walking-beam suspension** on the tractor's tandem drive axles (a pivot
    between the two axles).
-7. **Opening sleeper door or window**, big enough to show Bear sitting inside.
-   A Bear figure is an optional easter egg.
+7. **Opening sleeper door or window.** (No Bear figure.)
 
 **Not planned** (too much complexity for the payoff): working lights, a
 motorized drive, and trailer steering.
@@ -135,7 +137,7 @@ We check in with each other at every ✋ gate before moving on.
 | **3. Bodywork design** | Cab, sleeper, engine, trailer box, reefer unit, stripes | Full model file plus **renders** (front 3/4, rear 3/4, side, cab tilted, doors open) | ✋ Design review. We iterate on looks here |
 | **4. Parts list** | Full BOM from the model, with part counts by color | `parts/*.csv` + BrickLink XML | ✋ **Inventory check.** You compare against your parts, and we substitute where needed |
 | **5. Build files** | Final `.mpd` with building steps | `model/bj-and-the-bear.mpd` | — |
-| **6. Instruction booklet** | Generated PDF: tractor and trailer as separate books, or one combined book | `instructions/*.pdf` | ✋ Proof-read |
+| **6. Instruction booklet** | Generated PDFs: one tractor book and one trailer book | `instructions/*.pdf` | ✋ Proof-read |
 
 ## 8. Repository layout
 
@@ -165,8 +167,4 @@ bj-and-the-bear/
 
 ## 10. Open questions
 
-1. **Trailer length:** 40 ft (64 studs) or 45 ft (71 studs)?
-2. **Booklet format:** separate tractor and trailer books, or one combined book?
-3. **Bear figure:** include one? A brick-built chimp, or a minifig-style
-   monkey scaled up?
-4. **Feature priorities** in section 4: anything to add, drop or reorder?
+None at the moment. All planning questions are answered (see section 3).
