@@ -1,7 +1,8 @@
 # BJ and the Bear: Design Sheet (Phase 1)
 
-**Status: revised from the reference photos. Waiting for the wheelbase
-decision and the Phase 1 sign-off.**
+**Status: the wheelbase (19.5 studs at 1:24), stacked-brick trailer walls and pinstripes (gold, white, gold) are agreed. The overall scale is under
+review, since the rig is longer than expected. See [renders/scale-compare.png](renders/scale-compare.png).
+All figures below are at 1:24 and will be re-derived once a scale is chosen.**
 
 ![Side proportion sheet](renders/proportion-sheet.png)
 
@@ -157,8 +158,10 @@ what you told me earlier ("smooth tiles"), so this is your call.
   straight off.
 - **Landing gear:** legs that slide or swing down.
 
-## 7. Questions for the Phase 1 gate
+## 7. Decisions at the Phase 1 gate
 
-- **A. Wheelbase:** OK to go with the recommended 19.5 studs?
-- **B. Trailer walls:** Option B, stacked bricks and plates? Or keep SNOT tiles?
-- **C. Centre pinstripe:** gold (Pearl Gold) or white?
+- **Wheelbase:** 19.5 studs at 1:24, agreed. It gets re-scaled with the body.
+- **Trailer walls:** Option B, stacked bricks and plates.
+- **Pinstripes:** **gold, white, gold**, one plate each.
+- **Open: overall scale.** The candidates are 1:28 or 1:30 with the same
+  wheels (see `tools/scale_compare.py`).
