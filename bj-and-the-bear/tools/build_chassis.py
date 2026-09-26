@@ -114,16 +114,16 @@ def tractor_chassis(steer_deg=0.0):
     tie_x, tie_z = STEER_X + 40 + dx, dz
     # Tie rod: a thin 5L beam resting on the arm studs (smooth, so it pivots).
     # Lever sits directly on top; both stay below the frame rails (96).
-    m.add("32017.dat", DBG, (tie_x, -81, tie_z))                # 76..86, holes vertical
+    m.add("32017.dat", LBG, (tie_x, -81, tie_z))                # 76..86, holes vertical
     for side in (-1, 1):
         m.add("3673.dat", LBG, (tie_x, -75, tie_z + side * KINGPIN_Z), VERTICAL)
     lever_x, lever_z = 180, 0
     ang = math.atan2(tie_z - lever_z, lever_x - tie_x)          # lever points at the tie rod
-    m.add("6632.dat", DBG, (lever_x, -91, lever_z), rot_y(-90 + math.degrees(ang)))  # 86..96
+    m.add("6632.dat", LBG, (lever_x, -91, lever_z), rot_y(-90 + math.degrees(ang)))  # 86..96
     m.add("32062.dat", LBG, (tie_x, -86, tie_z), VERTICAL)      # axle 2: locked in lever, turns in tie rod
     m.add("3705.dat", DBG, (lever_x, -126, lever_z), VERTICAL)  # steering column 86..166
     m.add("3709b.dat", BLACK, (180, top(FRAME_TOP + 8), 0), rot_y(90))  # column bearing on the rails
-    m.add("6538a.dat", DBG, (lever_x, -176, lever_z), VERTICAL)  # joiner: cab shaft drops in here
+    m.add("6538a.dat", DBG, (lever_x, -166, lever_z), VERTICAL)  # joiner over the column top; cab shaft drops in
     m.step()
 
     # Step 5: walking-beam tandem
