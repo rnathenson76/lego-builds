@@ -1,6 +1,6 @@
 # BJ and the Bear — Kenworth K100 Aerodyne + Reefer Trailer
 
-Build plan. **Status: plan agreed. Phase 1 (reference and dimensions) is in progress.**
+Build plan. **Status: Phase 1 (reference and dimensions) is done; see DESIGN.md. Next is Phase 2 (rolling chassis).**
 
 ## 1. Goal
 
@@ -12,38 +12,33 @@ A functional Lego model of BJ McKay's season 1 rig from *BJ and the Bear* (1979)
 - **Paint:** red, white and black with gold pinstripes. Phase 1 confirms the
   exact layout from reference photos.
 
-## 2. Scale: set by the wheels
+## 2. Scale
 
-| Item | Value |
+**1:28 body on the 13x24 wheels** (2695 + 2696). The wheels read about 17%
+oversize. We chose this over true 1:24 to keep the model a manageable length.
+`DESIGN.md` has the full dimension sheet.
+
+| Item | Model |
 |---|---|
-| Wheel | **2695** Model Team rim 30 mm, with **2696** tire 13 x 24 (Ø 43.2 mm) |
-| Real tire | 11R22.5, about 1.05 m tall |
-| **Scale** | **about 1:24.** 1 stud (8 mm) is about 19 cm real, and 1 brick height is about 23 cm real |
-| Wheels on hand | **18.** That matches the real wheel count exactly: steer 2 + drive 8 + trailer 8 |
-
-### Target dimensions (approximate; Phase 1 checks them against references)
-
-| Element | Real | Model |
-|---|---|---|
-| Body width | 96 in / 2.44 m | **12 studs** (agreed) |
-| Width over the dual tires | about 2.44 m | about 12–13 studs |
-| Tractor length | about 6–6.5 m | about 30–34 studs |
-| Trailer length | 45 ft (13.7 m) | **about 71 studs** (agreed; 45 ft to start) |
-| Trailer height (13'6") | 4.1 m | about 18 bricks |
-| Whole rig | about 17 m | about 90 studs (about 72 cm); see DESIGN.md |
+| Body width | **10 studs** (about 11 over the dual tires) |
+| Tractor | 27 studs, wheelbase 16 |
+| Trailer | **40 ft = 56 studs**, 30-plate walls |
+| Whole rig | **71 studs, about 57 cm long and 15 cm tall** |
+| Wheels | All 18 used: steer 2 + drive 8 + trailer 8 |
 
 ## 3. Decisions so far
 
 | Topic | Decision |
 |---|---|
 | Wheels | 18 of 2695 + 2696, already owned |
-| Width | 12-wide |
-| Trailer type | Refrigerated trailer, as in season 1, **45 ft** |
+| Scale / width | 1:28 body on the 13x24 wheels, 10-wide (changed from 1:24, 12-wide, to shorten the model) |
+| Trailer type | Refrigerated trailer, as in season 1, **40 ft** (changed from 45 ft) |
 | Booklets | **Separate** tractor and trailer books |
 | Bear figure | Not included |
 | Feature list | Agreed as written in section 4 |
 | Stripes and livery | Built from tiles and brick color changes. **No stickers** |
-| Trailer walls | **Smooth tiles**, not panels |
+| Trailer walls | **Stacked bricks and plates** (smooth sides, 1-plate stripes). Changed from SNOT tiles |
+| Pinstripes | Gold, white, gold |
 | Function | **Functional** (feature list in section 4) |
 | Deliverables, in order | Design + renders, then parts list, then build files + **Lego-style instruction booklet** |
 | Parts check | After the plan is agreed, we check the parts inventory together before committing to the build |
@@ -99,12 +94,11 @@ bj-and-the-bear.mpd
 
 ### Construction approach
 
-- **Stripes:** built SNOT-style (studs not on top). Tiles on sideways-facing
-  studs make the stripe bands in white, black and gold. For the gold, the
-  choice is Pearl Gold or Tan/Yellow; I'll check which reads best in renders.
-- **Trailer walls:** SNOT tiles on brackets over a brick frame. A 64-stud side
-  needs **a lot of tiles**. The parts check will probably hinge on this, so
-  I'll give tile counts per size and color early, in Phase 3.
+- **Stripes:** built from colored plate layers (gold, white, gold) that line
+  up across the cab and the trailer. The cab corners and front may use SNOT
+  where the stripes wrap around.
+- **Trailer walls:** stacked 1 × 8 bricks and plates. `DESIGN.md` section 4
+  has the first part estimate. Gold 1 × 8 plates are the likely shortage.
 - **Wheels:** check how the 2695 hub mounts in LDraw (rim geometry) during
   Phase 2. Duals are two rims side by side on one axle.
 
@@ -157,8 +151,11 @@ bj-and-the-bear/
 - **I can't see the model the way you can.** I write LDraw coordinates as text
   and check them through renders. Expect a few rounds of iteration per
   submodel, especially at the Phase 3 gate.
-- **Tile quantities.** Smooth-tiled trailer walls in white could need several
-  hundred tiles. That is the most likely shortfall in the parts check.
+- **Gold plates.** The pinstripes need about 28 gold 1 × 8 plates. Pearl Gold
+  1 × 8 plates are rare, so Tan or Yellow are the fallbacks.
+- **Tight width.** At 10-wide, the steering, the walking beam and the
+  frame share about 4 studs between the inner duals. Phase 2 proves this
+  first.
 - **Old wheel geometry.** The 2695 rim is an old Model Team part. Mounting the
   duals and fitting them between the fenders needs a test early in Phase 2.
 - **Library age.** The Ubuntu LDraw library is the 2023 release. Parts newer
