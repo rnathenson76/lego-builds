@@ -1,7 +1,8 @@
 # BJ and the Bear: Design Sheet (Phase 1)
 
-**Status: Phase 1 is agreed, pending your final look at this sheet.** The
-settings:
+**Status: Phase 1 is agreed. The Phase 2 rolling chassis is built and waiting
+for review (section 8). Heights below include the one-plate frame raise from
+Phase 2.** The settings:
 - **1:28** body on the 13x24 wheels
 - **40 ft** refrigerated trailer
 - **16-stud** wheelbase
@@ -63,16 +64,16 @@ in **plates up from the ground**.
 | Bumper | x 0–1, 5–10 plates | Chrome |
 | Cab + sleeper | x 1–10 (9 studs) | Bumper to back of cab is 10 studs, about 2.2 m (86" BBC) |
 | Cab bottom edge | 15 plates | Sits above the steer tire. The steps and the wheel housing hang below it |
-| Front roof / visor | x 1–3.5, 39–40 plates | Red sun visor |
-| Aerodyne roof | slopes up from x 3.5 to x 6, flat at 45 plates to x 10 | Forward-facing upper sleeper window in the slope |
-| Roof pod | x 7–9.5, 45–47 plates | Red. Its top lines up with the trailer roof. It also houses the steering knob |
-| Steer axle | x 4.5 | |
-| Drive axles | x 17.5 / x 23.5 | Duals, 6 studs apart (the minimum with these tires) |
+| Front roof / visor | x 1–3.5, 41–42 plates | Red sun visor |
+| Aerodyne roof | slopes up from x 3.5 to x 6, flat at 47 plates to x 10 | Forward-facing upper sleeper window in the slope |
+| Roof pod | x 7–9.5, 47–49 plates | Red. Its top lines up with the trailer roof. It also houses the steering knob |
+| Steer axle | x 5 | |
+| Drive axles | x 18 / x 24 | Duals, 6 studs apart (the minimum with these tires). Walking-beam pivot at x 21 |
 | **Wheelbase** | **16 studs** | About 141 in at 1:28 |
-| Frame rails | x 1–27, top at 14 plates | |
-| Fifth wheel | centre x 19, 14–16 plates | 1.5 studs ahead of the tandem centre |
+| Frame rails | x 1–27, 12–15 plates | Raised one plate in Phase 2 so the tie rod fits underneath. Frame top = cab floor |
+| Fifth wheel | centre x 19, 15–18 plates | A 4 × 4 turntable, 2 studs ahead of the tandem centre |
 | Fuel tank + steps | x 7.5–11.5, 8–12 plates | Chrome |
-| Exhaust stacks | x 10.2–11, up to 50 plates | Twin chrome stacks in the gap behind the cab |
+| Exhaust stacks | x 10.2–11, up to 52 plates | Twin chrome stacks in the gap behind the cab |
 | Quarter fenders | over the drive axles | Chrome |
 | **Tractor length** | **27 studs** (21.6 cm) | |
 
@@ -81,15 +82,15 @@ in **plates up from the ground**.
 | Feature | Position / size | Notes |
 |---|---|---|
 | Box | rig-x 15–71 (**56 studs**) | About 41 ft at 1:28. 56 is 7 × 8, so it's all 1 × 8 bricks and plates |
-| Bottom rail | 16–17 plates | Black. The underside sits on the fifth wheel |
-| Walls | 17–47 plates (**30 plates**) | Stacked bricks and plates. See section 4 |
+| Bottom rail | 18–19 plates | Black floor plates. The underside sits on the fifth wheel |
+| Walls | 19–49 plates (**30 plates**) | Stacked bricks and plates. See section 4 |
 | Kingpin | trailer-x 4 (rig-x 19) | |
-| Refrigeration unit | 2 studs ahead of the front wall, 30–45 plates, about 7 wide | Red, with a gray grille |
+| Refrigeration unit | 2 studs ahead of the front wall, 32–47 plates, about 7 wide | Red, with a gray grille |
 | Landing gear | trailer-x 15 (rig-x 30) | 3 studs clear of the tractor frame end |
 | Trailer axles | trailer-x 45 / 51 | Duals, 6 studs apart |
 | Rear | trailer-x 56 | Opening barn doors, lights, underride bar |
 
-**Whole rig: 71 studs, about 57 cm long and 15 cm tall.**
+**Whole rig: 71 studs, about 57 cm long and 16 cm tall.**
 
 ### Clearances checked on paper
 
@@ -113,12 +114,12 @@ Heights are in plates above the ground.
 
 | Plates | Cab side | Trailer wall (built as) |
 |---|---|---|
-| 36–47 | Windows (29–37) and roof: **red** | **Red**, 11 plates = 3 bricks + 2 plates |
-| 27–36 | White band under the windows (27–29). **White panel on the rear of the sleeper** (x 6–10, up to 36) with a rounded front-top corner | **White**, 9 plates = 3 bricks |
+| 38–49 | Windows (31–39) and roof: **red** | **Red**, 11 plates = 3 bricks + 2 plates |
+| 29–38 | White band under the windows (29–31). **White panel on the rear of the sleeper** (x 6–10, up to 38) with a rounded front-top corner | **White**, 9 plates = 3 bricks |
+| 28 | **Gold** pinstripe | Gold 1 × 8 plates |
+| 27 | **White** pinstripe | White 1 × 8 plates |
 | 26 | **Gold** pinstripe | Gold 1 × 8 plates |
-| 25 | **White** pinstripe | White 1 × 8 plates |
-| 24 | **Gold** pinstripe | Gold 1 × 8 plates |
-| 15–24 (cab), 17–24 (trailer) | **Red** | **Red**, 7 plates = 2 bricks + 1 plate |
+| 15–26 (cab), 19–26 (trailer) | **Red** | **Red**, 7 plates = 2 bricks + 1 plate |
 
 - **Cab front:** red above the stripe line. Below it, the front is white around a
   chrome grille, with rectangular headlights. The pinstripes wrap around the
@@ -147,19 +148,39 @@ Heights are in plates above the ground.
 | Glass | Trans-Clear or Trans-Black | 47 / 40 | |
 | Tires / rims | Black / Light Bluish Gray | 0 / 71 | |
 
-## 6. Mechanisms: how each one fits
+## 6. Mechanisms (as built in Phase 2)
 
-- **Steering:** a gear rack sits in front of the steer axle at x 4.5. A vertical
-  shaft runs up the back wall of the cab to a knob in the roof pod. The shaft
-  splits at frame level so the cab can tilt.
-- **Tilting cab:** the hinge sits at the front of the frame, at about x 1.5 and
-  14 plates high. The cab latches at the rear.
-- **Walking beam:** the two drive axles sit on one beam per side, pivoting at
-  x 20.5.
-- **Fifth wheel and kingpin:** a turntable or pin at x 19. The trailer lifts
+See section 8 for the renders. The model is in `model/chassis.mpd`, generated by
+`tools/build_chassis.py`.
+
+- **Steering** (tested up to 30° in the model; about 35° before a tire touches
+  the frame):
+  - Each front wheel is a **knuckle**: a 1 × 2 Technic brick holding a 5-long
+    stub axle, with a 2 × 4 Technic plate on top as the steering arm.
+  - Each knuckle turns on a **2 × 2 turntable** below it. The turntables sit on
+    a low 4 × 6 axle beam, and a post in front of the wheels ties the beam to
+    the frame.
+  - A **thin 5-long beam** is the tie rod. It rests on the steering-arm studs
+    and is pinned to both arms.
+  - A **3-long thin lever** on the vertical steering column pushes the tie rod.
+  - The column rises through a bearing plate on the rails and ends in an
+    **axle joiner**. When the cab is lowered, its roof-knob shaft drops into
+    the joiner. It lifts out when the cab tilts.
+- **Walking-beam tandem:** each side has a 1 × 8 Technic brick carrying both
+  drive axles. The beams pivot on one cross axle through two hangers under the
+  frame. That gives about 15° of rock, so all eight drive tires stay on the
+  ground.
+- **Fifth wheel:** a 4 × 4 turntable on the rails at x 19. The trailer's
+  underside sits on its studs, so the trailer turns on the turntable and lifts
   straight off.
-- **Landing gear:** legs that slide or swing down, at trailer-x 15.
-- **Doors:** cab doors at x 1–4. Rear barn doors on the trailer.
+- **Landing gear:** two 7-long Technic beams swing down on friction pins
+  under the trailer, at trailer-x 15. They're a hair longer than the ride
+  height, so a parked trailer sits a little high and the tractor can back
+  under it. Swing them up and back to stow.
+- **Trailer axles:** a fixed sub-frame (1 × 8 bricks on 1 × 8 Technic bricks)
+  at trailer-x 45 and 51.
+- **Tilting cab and opening doors:** these come in Phase 3. The cab hinge will
+  sit at the front of the frame.
 
 ## 7. Decisions log
 
@@ -173,3 +194,28 @@ Heights are in plates above the ground.
 | Pinstripes | Gold, white, gold |
 | Reefer unit | Red |
 | Rims | Light Bluish Gray |
+| Frame height | Top at 15 plates (raised one plate in Phase 2). The trailer rides one plate higher to match |
+
+## 8. Phase 2: rolling chassis (for review)
+
+| View | Image |
+|---|---|
+| Whole rig | ![](renders/phase2-rig-front34.png) |
+| Side | ![](renders/phase2-rig-side.png) |
+| Tractor chassis | ![](renders/phase2-tractor-low34.png) |
+| Steering at 30°, from below | ![](renders/phase2-steer30-bottom.png) |
+
+- **Parts:** 128 in all, including the 18 wheels. See `parts/chassis-bom.csv`;
+  `parts/chassis-bom.xml` is a BrickLink wanted list. Part colors under the
+  chassis are free, so substitute whatever you have.
+- **Checks:** a bounding-box overlap check runs with the wheels straight and
+  turned 30°. There are no clashes apart from known false alarms from rotated
+  round parts.
+- **Build a test piece first:** these mechanisms are designed in software and
+  haven't been built yet. Build the front axle (steps 2–4 of the tractor
+  chassis) before anything else, and check:
+  - the tie rod slides freely on the arm studs
+  - the turntables don't wobble under the truck's weight
+
+  If the turntables flex, we can put a plate under the beam.
+

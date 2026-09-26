@@ -10,7 +10,7 @@ from pathlib import Path
 
 STUD = 12.0            # px per stud in the drawing
 PLATE = STUD * 0.4     # a plate is 3.2 mm, 0.4 of a stud
-W_STUDS, H_PLATES = 76, 54
+W_STUDS, H_PLATES = 76, 56
 MARGIN = 40
 WHEEL_R_PLATES = 6.75  # 2696 tire: 108 LDU diameter -> 54 LDU radius = 6.75 plates
 
@@ -75,55 +75,55 @@ for p in range(0, H_PLATES + 1, 3):
     shapes.append(f'<line x1="{X(0)}" y1="{Y(p)}" x2="{X(W_STUDS)}" y2="{Y(p)}" stroke="{COL["grid"]}" stroke-width="0.5"/>')
 
 # ---- tractor ----
-# 1:28 body on the 1:24 wheels. Wheelbase 16 studs (~141 in); 3-stud gap
-# between the cab and the reefer unit, as in the reference photos.
-STEER, DRIVE1, DRIVE2 = 4.5, 17.5, 23.5
+# 1:28 body on the 13x24 wheels. Heights follow the Phase 2 chassis:
+# frame top 15 plates, fifth wheel / trailer underside 18 plates.
+STEER, DRIVE1, DRIVE2 = 5, 18, 24
 FIFTH = 19
-rect(1, 27, 12, 14, COL["black"])                       # frame rails
+rect(1, 27, 12, 15, COL["black"])                       # frame rails
 rect(0, 1, 5, 10, COL["silver"])                        # bumper
-rect(1, 10, 15, 39, COL["red"])                         # cab + sleeper box
-rect(1, 3.5, 39, 40, COL["red"])                        # front roof / visor
-shapes.append(f'<polygon points="{X(3.5)},{Y(39)} {X(6)},{Y(45)} {X(10)},{Y(45)} {X(10)},{Y(39)}" '
+rect(1, 10, 15, 41, COL["red"])                         # cab + sleeper box
+rect(1, 3.5, 41, 42, COL["red"])                        # front roof / visor
+shapes.append(f'<polygon points="{X(3.5)},{Y(41)} {X(6)},{Y(47)} {X(10)},{Y(47)} {X(10)},{Y(41)}" '
               f'fill="{COL["red"]}" stroke="{COL["black"]}" stroke-width="1"/>')  # Aerodyne raised roof
-rect(7, 9.5, 45, 47, COL["red"])                        # roof pod
-shapes.append(f'<polygon points="{X(4)},{Y(40)} {X(5.5)},{Y(44)} {X(7)},{Y(44)} {X(7)},{Y(40)}" '
+rect(7, 9.5, 47, 49, COL["red"])                        # roof pod (steering knob)
+shapes.append(f'<polygon points="{X(4)},{Y(42)} {X(5.5)},{Y(46)} {X(7)},{Y(46)} {X(7)},{Y(42)}" '
               f'fill="{COL["glass"]}" stroke="{COL["black"]}" stroke-width="0.6"/>')  # upper sleeper window
-rect(1.3, 4, 29, 37, COL["glass"], sw=0.6)              # door window
-rect(1, 10, 27, 29, COL["white"], sw=0.4)               # white band under the windows
-shapes.append(f'<path d="M{X(10)},{Y(27)} L{X(10)},{Y(36)} L{X(7)},{Y(36)} Q{X(6)},{Y(36)} {X(6)},{Y(34)} L{X(6)},{Y(27)} Z" '
+rect(1.3, 4, 31, 39, COL["glass"], sw=0.6)              # door window
+rect(1, 10, 29, 31, COL["white"], sw=0.4)               # white band under the windows
+shapes.append(f'<path d="M{X(10)},{Y(29)} L{X(10)},{Y(38)} L{X(7)},{Y(38)} Q{X(6)},{Y(38)} {X(6)},{Y(36)} L{X(6)},{Y(29)} Z" '
               f'fill="{COL["white"]}" stroke="{COL["black"]}" stroke-width="0.4"/>')  # white rear sleeper panel
-for y, c in ((26, "gold"), (25, "white"), (24, "gold")):   # pinstripes
+for y, c in ((28, "gold"), (27, "white"), (26, "gold")):   # pinstripes
     rect(1, 10, y, y + 1, COL[c], sw=0)
 rect(7.5, 11.5, 8, 12, COL["silver"])                   # fuel tank + steps
-rect(10.2, 11.0, 14, 50, COL["silver"])                 # exhaust stack
-rect(FIFTH - 1.5, FIFTH + 1.5, 14, 16, COL["black"])    # fifth wheel
+rect(10.2, 11.0, 15, 52, COL["silver"])                 # exhaust stack
+rect(FIFTH - 2, FIFTH + 2, 15, 18, COL["black"])        # fifth wheel (4x4 turntable)
 for x in (STEER, DRIVE1, DRIVE2):
     wheel(x)
 
 # ---- trailer ----
 T0 = FIFTH - 4          # kingpin 4 studs back from the trailer front
 T1 = T0 + 56            # 40 ft = 56 studs
-rect(T0 - 2, T0, 30, 45, COL["red"], label="reefer")    # refrigeration unit
-rect(T0, T1, 36, 47, COL["red"])                        # upper red
-rect(T0, T1, 27, 36, COL["white"], label="40 ft reefer: 56 studs, stacked bricks + plates")
-for y, c in ((26, "gold"), (25, "white"), (24, "gold")):
+rect(T0 - 2, T0, 32, 47, COL["red"], label="reefer")    # refrigeration unit
+rect(T0, T1, 38, 49, COL["red"])                        # upper red
+rect(T0, T1, 29, 38, COL["white"], label="40 ft reefer: 56 studs, stacked bricks + plates")
+for y, c in ((28, "gold"), (27, "white"), (26, "gold")):
     rect(T0, T1, y, y + 1, COL[c], sw=0)
-rect(T0, T1, 17, 24, COL["red"])                        # lower red
-rect(T0, T1, 16, 17, COL["black"])                     # floor / side rail
-rect(T0 + 15, T0 + 16, 4, 16, COL["silver"])           # landing gear
+rect(T0, T1, 19, 26, COL["red"])                        # lower red
+rect(T0, T1, 18, 19, COL["black"])                     # floor / side rail
+rect(T0 + 15, T0 + 16, 0, 18, COL["silver"])           # landing gear leg
 for x in (T1 - 11, T1 - 5):
     wheel(x)
 
 # ---- dimensions ----
-dim(0, 27, 52, "tractor 27 studs")
+dim(0, 27, 54, "tractor 27 studs")
 dim(0, T1, -7, f"whole rig {T1:.0f} studs ({T1 * 8 / 10:.0f} cm)")
-dim(STEER, (DRIVE1 + DRIVE2) / 2, 20.5, "wheelbase 16 (141 in)")
-vdim(T1 + 1.2, 0, 47, "47 plates")
-vdim(-1.5, 0, 45, "45 pl")
+dim(STEER, (DRIVE1 + DRIVE2) / 2, 21.5, "wheelbase 16 (141 in)")
+vdim(T1 + 1.2, 0, 49, "49 plates")
+vdim(-1.5, 0, 47, "47 pl")
 for x, name in ((STEER, "steer"), (DRIVE1, "drive"), (DRIVE2, "drive"), (T1 - 11, "trailer"), (T1 - 5, "trailer")):
     text(x, -3.6, name, size=9)
-text(FIFTH, 14.8, "5th", size=8, color="#FFFFFF")
-text(T0 + 15.5, 2.2, "legs", size=8, anchor="start")
+text(FIFTH, 16.3, "5th", size=8, color="#FFFFFF")
+text(T0 + 16.5, 2.2, "legs", size=8, anchor="start")
 
 W = X(W_STUDS) + MARGIN
 H = Y(-9) + MARGIN

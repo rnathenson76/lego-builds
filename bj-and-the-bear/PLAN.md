@@ -1,6 +1,6 @@
 # BJ and the Bear — Kenworth K100 Aerodyne + Reefer Trailer
 
-Build plan. **Status: Phase 1 (reference and dimensions) is done; see DESIGN.md. Next is Phase 2 (rolling chassis).**
+Build plan. **Status: Phases 1–2 are done (dimensions; rolling chassis in `model/chassis.mpd`). The chassis is waiting for review before Phase 3 (bodywork).**
 
 ## 1. Goal
 
